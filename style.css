@@ -1,0 +1,99 @@
+#photo {
+    width: 250px;          
+    height: 250px;         
+    border-radius: 50%;     
+    border: 3px solid #D4AF37;
+    object-fit: cover;    
+    display: block;        
+    margin-left: 200px; /* Убираем автоматические отступы */
+    margin-right: auto; 
+    object-position: center 30%
+    
+}
+#photo:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 15px rgba(0,0,0,0.3); 
+    transition: all 0.3s ease; 
+}
+
+
+
+nav {
+  background-color:#e8f5e9; /* Светлый фон меню */
+  padding: 20px 30px;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+nav a {
+  color: #333; /* Цвет текста */
+  text-decoration: none;
+  transition: all 0.3s ease;
+text-decoration: none;
+  margin: 0 20px; /* Отступ между пунктами меню */
+  margin-left: 90px;
+  padding: 8px 0; /* Внутренние отступы для ссылок */
+  position: relative;
+  font-size: 18px; /* Размер текста */
+  display: inline-block; /* Чтобы работали вертикальные отступы */
+}
+
+nav a:hover {
+  color: #007bff; 
+}
+
+h1 {
+    margin-left:210;
+    font-family: helvetica;
+}
+
+<style>
+       .section {
+           display: none;
+           padding: 20px;
+           animation: fadeIn 0.5s;
+    }
+       .section.active {
+            display: block;
+    }
+       @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+    }
+      </style>
+
+      .contacts-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts-list li {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+
+.section {
+  display: none;
+  padding: 20px;
+  animation: fadeIn 0.5s;
+}
+
+.section.active {
+  display: block;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.section p, 
+.section li {
+  font-size: 30px;
+}
